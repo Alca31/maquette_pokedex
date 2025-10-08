@@ -1,49 +1,60 @@
-    
-*{
-    margin: 0 auto;
-    padding: 0;
+    * {
+        margin: 0 auto;
+        padding: 0;
 
-}
-body{
-    background-color: #ef3e3e;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-}
+    }
 
-/* ///// id  ////////////// */
+    body {
+        background-color: #ef3e3e;
+        text-align: center;
 
-#seekbar{
-   justify-content: right;
-}
+    }
 
-#pokedex{
+    main {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        color: white;
+    }
 
-}
+    /* ///// id  ////////////// */
+    #showCardList {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 250px;
+        height: 100vh;
+        overflow-y: auto;
+    }
 
-#apkmn{
 
-}
+    #apkmn {}
 
-#hasevol{
-    
-}
 
-#sprite{
+    /* //// class /////////////// */
+    .pkdex {
+        display: flex;
+        background-color: #292929;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        ;
+        margin-bottom: 5px;
+        padding: 15px;
+        cursor: pointer;
+        transition: transform 0.2s;
 
-}
+    }
 
-#img{
+    .hasevol {}
 
-}
+    .sprite {}
 
-/* //// class /////////////// */
+    .img {}
 
-.npkdex{
+    .npkdex {
+        font-weight: bold;
+        font-size: 16px;
+        color: #fff;
+    }
 
-}
-
-.types{
-
-}
+    .types {}
