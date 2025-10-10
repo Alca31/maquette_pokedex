@@ -11,47 +11,42 @@
 <body>
     <h1>pokedex</h1>
 
-         <template id="pkmnCard">
-            <section>
-                <div class="pkdex">
-                    <p class="npkdex">numéro dans le pokédex</p>
-                    <h2>nom du pokemon</h2>
-                    <img class="sprite" src="" alt="sprite du pokémon" />
-                    <div class="types">
-                    </div>
-
-                </div>
-            </section>
-        </template>
-
+    <template id="pkmnCard">
+        <section>
+            <div class="pkdex">
+                <p class="npkdex"></p>
+                <h2></h2>
+                <img class="sprite" src="" alt="sprite du pokémon" />
+            </div>
+        </section>
+    </template>
+    <template id="Apkmn">
+        <p class="npkdex"></p>
+        <h2></h2>
+        <img class="img" src="" alt="img du pokémon" />
+        <div class="types">
+        </div>
+        <div class="hasEvol">
+            <p class="npkdex"></p>
+            <h2></h2>
+            <img class="sprite" src="" alt="sprite du pokémon" />
+        </div>
+    </template>
     <main>
         <section id="showCardList">
 
         </section>
-   
-            <section id="showDetail">
-                <form action="post" id="seek">
-                <input id="query" type="search"/>
+
+        <section>
+            <form action="post" id="seek">
+                <input id="query" type="search" />
                 <button type="submit">recherchez par le nom</button>
-                </form>
-                <template id="Apkmn">
-                <div>
-                    <p class="npkdex"></p>
-                    <h2></h2>
-                    <img class="img" src="" alt="img du pokémon" />
-                    <div class="types">
-                    </div>
-                    <div class="HasEvol">
-                        <p class="npkdex"></p>
-                        <h2></h2>
-                        <img class="sprite" src=""
-                            alt="sprite du pokémon" />
-                        <div class="types">
-                        </div>
-                    </div>
-                </div>
-                </template>
-            </section>
+            </form>
+
+            <div id="showDetail">
+
+            </div>
+        </section>
 
 
     </main>
